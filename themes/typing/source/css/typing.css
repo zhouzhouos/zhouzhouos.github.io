@@ -1,5 +1,12 @@
 @charset "utf-8";
 
+:root {
+    /* --my-bg-color: #e7e2d6; */
+    
+    --my-bg-color: #e7e2d6;
+    --my-fg-color: #f1ede4;
+}
+
 html {
     color: #333;
     background: #fff;
@@ -604,7 +611,8 @@ html {
     position: relative;
     box-sizing: border-box;
     color: #222;
-    background: inherit
+    /* background: #e7e2d6 */
+    background: var(--my-fg-color)
 }
 
 body,
@@ -942,8 +950,13 @@ blockquote {
 
 .article {
     width: 60%;
-    max-width: 700px;
-    margin: 0 auto
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 100px;
+    background-color: var(--my-fg-color)
+}
+.article-background{
+    background-color: var(--my-bg-color);
 }
 
 .article .header {
